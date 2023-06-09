@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+nav{
+    background-color: #000;
+    /* height: 60px; */
+}
+
+.logo{
+    width: 140px;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 60px;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+nav ul li a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: blueviolet;
+    position: relative;
+}
+
+nav ul li a:hover{
+    /* background-color: blueviolet;
+    color: #000;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px; */
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    background-color: blueviolet;
+    left: 9px;
+    bottom: 2px;
+    transition: 0.5s ease;
+}
+
+nav ul li a:hover::after{
+    width: 80%;
+    border-radius: 8px;
+}
+
+
+
+
