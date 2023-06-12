@@ -92,3 +92,16 @@ img{
     font-style: oblique;
 }
 
+.achievements{
+    display: flex;
+    margin: 13px 0 20px;
+}
+
+.education,
+.skills,
+.experience{
+    margin-right: 35px;
+    font-style: normal;
+    position: relative;
+}
+
