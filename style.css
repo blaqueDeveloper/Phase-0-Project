@@ -58,6 +58,7 @@ nav ul li a:hover::after{
     display: grid;
     grid-template-columns: auto 1fr;
     grid-gap: 10px;
+    padding-top: 20px;
 }
 
 img{
