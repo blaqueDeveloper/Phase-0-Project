@@ -141,3 +141,9 @@ img{
     justify-content: center;
     padding-bottom: 20px;
 }
+
+.fa.fa-phone,
+.fa.fa-envelope{
+    margin-right: 5px;
+    color: blueviolet;
+}
