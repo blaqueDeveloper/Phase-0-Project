@@ -103,3 +103,13 @@ img{
     position: relative;
 }
 
+.sucess::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    background-color: blueviolet;
+    left: 9px;
+    bottom: 2px;
+    transition: 0.5s ease;
+}
