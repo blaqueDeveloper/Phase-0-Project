@@ -183,17 +183,28 @@ img{
 nav .fa{
     display: none;
 }
-@media only screen and (max-width: 600px){
+/* @media only screen and (max-width: 600px){
     nav .fa{
         display: block;
         font-size: 25px;
     }
-    /* nav ul{
+    nav ul{
         position: fixed;
         top: 0;
         right: 0;
         width: 200px;
         height: 100vh;
         padding-top: 50px;
-    } */
-}
+        background-color: blueviolet;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fa{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+} */
