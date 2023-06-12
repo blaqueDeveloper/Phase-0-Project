@@ -101,6 +101,7 @@ img{
     margin-right: 35px;
     font-style: normal;
     position: relative;
+    cursor: pointer;
 }
 
 .sucess::after{
@@ -109,11 +110,14 @@ img{
     height: 3px;
     position: absolute;
     background-color: blueviolet;
-    left: 9px;
-    bottom: 2px;
+    left: 0px;
+    bottom: -8px;
     transition: 0.5s ease;
 }
 
+.success.current-link::after{
+    width: 50%;
+}
 .achievements-detailed ul li{
     list-style: none;
     margin-top: 10px;
@@ -124,4 +128,16 @@ img{
     color: blueviolet;
 }
 
+.achievements-detailed{
+    display: none;
+}
 
+.achievements-detailed.active{
+    display: block;
+}
+
+.contact{
+    display: grid;
+    justify-content: center;
+    padding-bottom: 20px;
+}

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>My Website</title>
 </head>
 <body>
@@ -39,12 +40,12 @@
                         As a software engineer, I am driven by my passion for technology and the endless possibilities it offers. With a keen eye for detail and a problem-solving mindset, I thrive in creating robust and efficient software solutions. I am constantly seeking opportunities to learn and grow, exploring new technologies and staying up-to-date with industry trends.</p>
                     
                     <div class="achievements">
-                        <p class="success">Education</p>
-                        <p class="success">Experience</p>
-                        <p class="success">Skills</p>
+                        <p class="success current-link" onclick="clicked('skills')">Skills</p>
+                        <p class="success" onclick="clicked('education')">Education</p>
+                        <p class="success" onclick="clicked('experience')">Experience</p>
                     </div>
 
-                    <div class="achievements-detailed">
+                    <div class="achievements-detailed active" id="skills">
                         <ul>
                             <li><span>Programming Languages</span><br>I am proficient in more than three programming languages to write code and develop applications</li>
                             <li><span>Web Development</span><br>I have the necessary skills realted to building websites and web applications</li>
@@ -55,20 +56,9 @@
                         </ul>
                     </div>
 
-                    <div class="achievements-detailed">
+                    <div class="achievements-detailed" id="education">
                         <ul>
-                            <li><span>Programming Languages</span><br>I am proficient in more than three programming languages to write code and develop applications</li>
-                            <li><span>Web Development</span><br>I have the necessary skills realted to building websites and web applications</li>
-                            <li><span>Back-end Development</span><br>I have intensive knowledge on server-side programming and handling server-side logic</li>
-                            <li><span>Version Control Systems</span><br>I am proficient in using version control systems to manage source code and collaborate with other developers</li>
-                            <li><span>Testing and Quality Assurance</span><br>I have the skills related to ensuring the quality and reliability of software</li>
-
-                        </ul>
-                    </div>
-
-                    <div class="achievements-detailed">
-                        <ul>
-                            <li><span>2006 - current </span>Professional Development Training<br></li>
+                            <li><span>2006 - current-link </span>Professional Development Training<br></li>
                             <li><span>2004 - 2005 </span>Coding Bootcamp<br></li>
                             <li><span>2001 - 2003 </span>Master's Degree<br></li>
                             <li><span>1999 - 2000 </span>Bachelor's Degree<br></li>
@@ -76,9 +66,48 @@
 
                         </ul>
                     </div>
+
+                    <div class="achievements-detailed" id="experience">
+                        <ul>
+                            <li><span>Programming Languages</span><br>I am proficient in more than three programming languages to write code and develop applications</li>
+                            <li><span>Web Development</span><br>I have the necessary skills realted to building websites and web applications</li>
+                            <li><span>Back-end Development</span><br>I have intensive knowledge on server-side programming and handling server-side logic</li>
+                            <li><span>Version Control Systems</span><br>I am proficient in using version control systems to manage source code and collaborate with other developers</li>
+                            <li><span>Testing and Quality Assurance</span><br>I have the skills related to ensuring the quality and reliability of software</li>
+
+                        </ul>
+                    </div>
+
                 </div>   
             </div>
         </div>
     </div>
+
+    <div class="contact">
+        <h1>Contact Me</h1>
+        <p>dorine.watene@student.moringaschool.com</p>
+        <p>0757067151</p>
+    </div>
+
+
+
+
+    <script>
+        let links = document.getElementsByClassName('success')
+        let contents = document.getElementsByClassName('achievements-detailed')
+
+        function clicked(name){
+            for(link of links){
+                link.classList.remove("current-link")
+            }
+
+            for(content of contents){
+                content.classList.remove("active")
+            }
+
+            event.currentTarget.classList.add("current-link")
+            document.getElementById(name).classList.add('active')
+        }
+    </script>
 </body>
 </html>
