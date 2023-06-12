@@ -69,3 +69,23 @@ img{
     color: blueviolet;
     font-style: oblique;
 }
+
+.about{
+    padding: 20px 20px 60px;
+}
+
+.about-details{
+    display: flex;
+}
+
+.about-img{
+    margin-right: 30px;
+    padding-left: 50px;
+}
+
+.about-text{
+    flex-basis: 60%;
+}
+.about-text p{
+    font-style: oblique;
+}
