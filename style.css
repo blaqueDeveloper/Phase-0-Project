@@ -60,6 +60,6 @@ nav ul li a:hover::after{
     grid-gap: 10px;
 }
 
-.img{
+img{
     justify-self: end;
 }
