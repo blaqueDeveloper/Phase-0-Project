@@ -63,3 +63,9 @@ nav ul li a:hover::after{
 img{
     justify-self: end;
 }
+
+.intro span{
+    font-size: 20px;
+    color: blueviolet;
+    font-style: oblique;
+}
