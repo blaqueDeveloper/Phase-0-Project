@@ -114,3 +114,14 @@ img{
     transition: 0.5s ease;
 }
 
+.achievements-detailed ul li{
+    list-style: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.achievements-detailed ul li span{
+    color: blueviolet;
+}
+
+
