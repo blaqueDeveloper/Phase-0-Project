@@ -54,3 +54,12 @@ nav ul li a:hover::after{
     width: 80%;
 }
 
+.intro{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 10px;
+}
+
+.img{
+    justify-self: end;
+}
